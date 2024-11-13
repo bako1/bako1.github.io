@@ -8,15 +8,9 @@
 <body>
     <h1>Redirecting...</h1>
     <script type="text/javascript">
-      // Attempt to reload the original path by redirecting back to index.html
-      var currentPath = window.location.pathname;
-      if (currentPath !== "/") {
-        // Redirect back to index.html while preserving the original path in the URL bar
-        window.location.replace( currentPath);
-      } else {
-        // If already at the root, simply load the home page
-        window.location.replace("/");
-      }
+      // Redirect to index.html and keep the original path
+      var originalPath = window.location.pathname;
+      window.location.replace("/?path=" + encodeURIComponent(originalPath));
     </script>
 </body>
 </html>
