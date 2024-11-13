@@ -12,7 +12,7 @@
       var currentPath = window.location.pathname;
       if (currentPath !== "/") {
         // Redirect back to index.html while preserving the original path in the URL bar
-        window.location.replace("/#" + currentPath);
+        window.location.replace( currentPath);
       } else {
         // If already at the root, simply load the home page
         window.location.replace("/");
