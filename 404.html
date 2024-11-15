@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <script type="text/javascript">
-      // Redirect to index.html with the path preserved in the hash
-      const redirectTo = window.location.pathname.replace(/[^/]+$/, '') ;
-      window.location.replace(redirectTo+"#" + window.location.pathname + window.location.search);
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image" href="/eyban.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#82b099"   />
+    <title>Abdi Porfoilio</title>
+    <script>
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     </script>
+    <script type="module" crossorigin src="/assets/index-kWnpya8b.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dq-ekrB4.css">
   </head>
-  <body></body>
+  <body class="dark:bg-[#2f2f2f] bg-green-50 dark: text-black ">
+    <div id="root"></div>
+  </body>
 </html>
